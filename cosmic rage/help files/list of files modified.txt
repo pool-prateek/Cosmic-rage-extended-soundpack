@@ -1,0 +1,18 @@
+a folder is denoted by "*" simble
+the file extensions are not mensioned because most of them, or every one of them are .set files.
+this is just a track of files witch we modified in this extended soundpack.
+	list of files modified
+*cosmic rage
+Cosmic rage
+*cosmic rage/misc
+Babies
+comms
+Doors
+dragons
+house
+keys
+mainAmbience
+misc
+music
+socials
+toys

@@ -1,0 +1,50 @@
+#TRIGGER {You gently open *mouth and begin to help *eat *} {loopsound {cosmic rage/general/Baby/babyeat.wav} @vol; #gagline all; #var BabyEathandle %playhandle; #var BabyEat "Enabled"} {}
+#TRIGGER {You gently open * mouth and begin to help *drink*} {loopsound {cosmic rage/general/Baby/babydrinks.wav} @vol; #gagline all; #var BabyDrinkhandle %playhandle; #var BabyDrink "Enabled"} {}
+#TRIGGER {* appears to have finished *drink*} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {@BabyDrink = "Enabled"} {
+#pc @BabyDrinkhandle stop;
+#var BabyDrink "Disabled"}} {}
+#TRIGGER {*burps as *finishes *food*} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {@BabyEat = "Enabled"} {
+#pc @BabyEathandle stop;
+#var BabyEat "Disabled"}} {}
+#TRIGGER {* whines softly.} {playsound  {Cosmic Rage/general/baby/babywhine.wav} @vol; #gagline voice} {}
+#TRIGGER {* cuddles * full up*} {playsound  {Cosmic Rage/general/baby/babylaugh.wav} @vol; #gagline voice;#if {@babyeat = "Enabled"} {#pc @babyEatHandle stop; #var babyeat "Disabled"}} {}
+#trigger {* really seems to be enjoying *} {playsound  {Cosmic Rage/general/Baby/babyhappy.wav} @vol; #gagline voice} {}
+#trigger {* gently opens * mouth and begins to gently feed * to *} {loopsound {cosmic rage/general/Baby/babyeat.wav} @vol; #gagline all; #var BabyEathandle %playhandle; #var BabyEat "Enabled"} {}
+#trigger {*gently opens *mouth and begins to help *drink *} {loopsound {cosmic rage/general/Baby/babydrinks.wav} @vol; #gagline all; #var BabyDrinkhandle %playhandle; #var BabyDrink "Enabled"} {}
+#trigger {* spits up all over *self!} {#if {@BabyEat = "Enabled"} {
+#pc @BabyEathandle stop;
+#var BabyEat "Disabled"}}
+#trigger {You gently lift * to your shoulder and burp *} {playsound  {Cosmic Rage/general/baby/babyburps.wav} @vol; #gagline voice; #if {@BabyEat = "Enabled"} {
+#pc @BabyEathandle stop;
+#var BabyEat "Disabled"}} 
+#trigger {* giggles happily.} {playsound {Cosmic Rage/general/baby/babylaugh1.wav} @vol}
+#trigger {* blinks at * for several moments, then busts out laughing.} {playsound {Cosmic Rage/general/baby/peekaboo*3.wav} @vol}
+#trigger {*bursts into a flood of tears!} {playsound {Cosmic Rage/general/baby/sob.wav} @vol}
+#trigger {* beams happily.} {playsound {Cosmic Rage/general/baby/beams.wav} @vol}
+#trigger {* smiles, attempting to wrap * arms around * neck.} {playsound {Cosmic Rage/general/baby/hugs.wav} @vol}
+#trigger {* waves * in the air!} {playsound {Cosmic Rage/general/baby/waves.wav} @vol}
+#trigger {* goes roar, attempting to imitate a dragon.} {playsound {Cosmic Rage/general/baby/roar.wav} @vol}
+#trigger {* roars cutely!} {playsound {Cosmic Rage/general/baby/roar.wav} @vol}
+#trigger {* giggles a little.} {playsound {Cosmic Rage/general/baby/giggle.wav} @vol}
+#trigger {* goes roar!} {playsound {Cosmic Rage/general/baby/dragonroar.wav} @vol}
+#trigger {* glances up at * and coos.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
+#trigger {* smiles, letting out little coos as * settles down.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
+#trigger {* lets out a waterfall of laughter, wriggling crazily to try and escape.} {playsound {Cosmic Rage/general/baby/babylaugh2.wav} @vol}
+#trigger {* squeals happily.} {playsound {Cosmic Rage/general/baby/babyhappy.wav} @vol}
+#trigger {* laughs and tries to pull * feet away.} {playsound {Cosmic Rage/general/baby/babylaugh2.wav} @vol}
+#trigger {* coos contentedly and settles in.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
+#trigger {* sighs and coos relaxing * body.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
+#trigger {* coos and rests * head on * cheek.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
+#TRIGGER {* lets out a soft whine.} {playsound  {Cosmic Rage/general/baby/babywhine.wav} @vol}
+#trigger {* wimpers.} {playsound {Cosmic Rage/general/baby/babywhimper*2.wav} @vol}
+#trigger {*screams angrily and tries to struggle out of *} {playsound {Cosmic Rage/general/baby/babyscream*4.wav} @vol}
+#trigger {*lets out a loud sob and reaches out for *} {playsound {Cosmic Rage/general/baby/Babysob*2.wav} @vol}
+#trigger {*screams furiously.} {playsound {Cosmic Rage/general/baby/babyscream*4.wav} @vol}
+#trigger {* tries to take a chunk out of a nearby object.} {playsound {Cosmic Rage/general/misc/curesearch.wav} @vol}
+#trigger {* suddenly bursts into floods of tears because *} {playsound {Cosmic Rage/general/baby/sob.wav} @vol}
+#trigger {* begins to cry.} {playsound {Cosmic Rage/general/baby/sob.wav} @vol}
+#trigger {* seems highly pleased by *} {playsound {Cosmic Rage/general/baby/babyhappy.wav} @vol}
+#trigger {* sobs hard.} {playsound {Cosmic Rage/general/baby/Babysob*2.wav} @vol}
+#trigger {* sobs histerically!} {playsound {Cosmic Rage/general/baby/Babysob*2.wav} @vol}
+#trigger {* waves and laughs!} {playsound {Cosmic Rage/general/baby/babylaugh.wav} @vol}
+#trigger {* squeals with delight.} {playsound {Cosmic Rage/general/baby/babyhappy.wav} @vol}

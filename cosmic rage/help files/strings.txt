@@ -1,0 +1,91 @@
+//raw strings
+//start of keys.set
+#GKey {Shift-Alt-O} {acc} {}
+#GKey {Shift-Alt-M} {dec} {}
+#GKey {Shift-Alt-J} {hb} {}
+#GKey {Alt-B} {buckle} {}
+#GKey {Control-M} {cancel mapper}  {}
+#GKey {Control-O} {auction out} {}
+//end of keys.set
+//start of socials.set
+#trigger {you shush *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/shush*2.wav} @vol}}
+#trigger {* shushes *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/shush*2.wav} @vol}}
+#trigger {* kick * smack bang in the stomach.} {#if {@SocialSounds = "Enabled"} {playsound  {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.2 {playsound  {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}}
+#trigger {* kicks * smack bang in the stomach.} {#if {@SocialSounds = "Enabled"} {playsound  {cosmic rage/General/Combat/FootSwing*9.wav} @Vol; #PC %Playhandle Pan %Random(-1500,1500); #Alarm 0.2 {playsound  {cosmic rage/General/Socials/Kick*9.wav} @Vol; #PC %Playhandle Pan %Random(-4000,4000)}}}
+//end of socials.set
+//start of misc.set
+#trigger {You drink some *} {playsound {Cosmic Rage/general/food and drink/liquid.wav} @vol}
+#trigger {You lean over and drink from *} {playsound {Cosmic Rage/general/food and drink/liquid.wav} @vol}
+#trigger {[[]camera]: *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol}
+#trigger {* security drone *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol}
+#trigger {* security camera *} {playsound {Cosmic Rage/general/misc/Camera.wav} @vol}
+//end of misc.set
+//start of doors.set
+#trigger {You unlock * door} {playsound {Cosmic Rage/general/doors/DoorUnlock.wav} @vol}
+#trigger {You lock * door} {playsound {Cosmic Rage/general/doors/Doorlock.wav} @vol}
+#trigger {You unlock * door *} {playsound {Cosmic Rage/general/doors/DoorUnlock.wav} @vol}
+#trigger {You lock * door *} {playsound {Cosmic Rage/general/doors/Doorlock.wav} @vol}
+#TRIGGER {Someone knocks on *} {playsound {cosmic rage/general/doors/doorknock.wav} @vol} {}
+#TRIGGER {You knock on *} {playsound {cosmic rage/general/doors/doorknock.wav} @vol} {}
+//end of doors.set
+//music.set
+#If {%IfWord(A Humble Abode,@planetname," ")} {
+#if {@planet <> "humble"} {
+#if {@musicPlaying = 1} {
+#pc @musichandle stop; #var MusicPlaying 0};
+loopsound {cosmic rage/music/planets/HumbleAbode.wav} @musicvol;
+#var musicplaying 1; #var musichandle %playhandle; #var planet "humble"}};
+#trigger {Command aborted.} {
+playsound {cosmic rage/general/misc/abort2.wav} @vol}
+//ambience.set
+#If {%IfWord(park,@RoomName," ")} {
+#var currentroom2 "notmisc";
+#if {@currentroom <> "park"} {
+#if {@RoomSoundPlaying = 1} {
+#pc @roomhandle stop; #var RoomSoundPlaying 0};
+loopsound {cosmic rage/Ambiences/park.wav} @roomvol;
+#Var RoomHandle %Playhandle; #var roomSoundPlaying 1; #var currentroom "park"}};
+//dragons.set
+#TRIGGER {* swishes * tail.} {playsound {cosmic rage/general/misc/swish.wav} @vol; #PC %Playhandle Pan %Random(0,1000)};
+#TRIGGER {You swish * tail.} {#gagline all; playsound {cosmic rage/general/misc/swish.wav} @vol; #PC %Playhandle Pan %Random(0,1000)};
+//socials.set
+#trigger {* tickles * mercilessly.} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/tickle*2.wav} @vol}}
+#trigger {* tickles * mercilessly! *} {#if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/tickle*2.wav} @vol}}
+#trigger {You tickle * mercilessly.} {#if {@SocialText = "Disabled"} {#gagline all}; #if {@SocialSounds = "Enabled"} {playsound {Cosmic Rage/general/socials/tickle*2.wav} @vol}}
+//coms.set
+#trigger {You tap the menu icon on * earpiece} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
+#trigger {You tap the menu icon on * Radio} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
+#trigger {You tap the menu icon on * wrist communicator} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
+#trigger {You tap the menu icon on * communicator ring} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
+#trigger {You tap the menu icon on * pendant communicator} {playsound {Cosmic Rage/general/comms/Tune.wav} @CommsVol}
+//misc.set
+#TRIGGER {With a great rushing of wings, * lifts off into the sky to hunt.} {playsound {cosmic rage/general/misc/flutter.wav} @vol; #PC %Playhandle Pan %Random(-100,100)};
+#TRIGGER {There is a flapping of wings then * sweeps from the sky, a catch clamped firmly in * beak.} {playsound {cosmic rage/general/misc/flutter.wav} @vol; #PC %Playhandle Pan %Random(-100,100)};
+#trigger {* makes a short, sharp crashing smashing noise as it recycles its contents.} {playsound {cosmic rage/general/misc/TrashCan*2.wav} @vol}
+#trigger {You begin to load * from *} {playsound {cosmic rage/activities/Fishing/FishWorm.wav} @vol}
+#trigger {* begins to load * from *} {playsound {cosmic rage/activities/Fishing/FishWorm.wav} @vol}
+//babies.set
+#trigger {* goes roar, attempting to imitate a dragon.} {playsound {Cosmic Rage/general/baby/roar.wav} @vol}
+#trigger {* roars cutely!} {playsound {Cosmic Rage/general/baby/roar.wav} @vol}
+#trigger {* goes roar!} {playsound {Cosmic Rage/general/baby/dragonroar.wav} @vol}
+#trigger {* glances up at * and coos.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
+#trigger {* smiles, letting out little coos as * settles down.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
+#trigger {* lets out a waterfall of laughter, wriggling crazily to try and escape.} {playsound {Cosmic Rage/general/baby/babylaugh2.wav} @vol}
+#trigger {* squeals happily.} {playsound {Cosmic Rage/general/baby/babyhappy.wav} @vol}
+#trigger {* laughs and tries to pull * feet away.} {playsound {Cosmic Rage/general/baby/babylaugh2.wav} @vol}
+#trigger {* coos contentedly and settles in.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
+#trigger {* sighs and coos relaxing * body.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
+#trigger {* coos and rests * head on * cheek.} {playsound {Cosmic Rage/general/baby/babycoo.wav} @vol}
+#TRIGGER {* lets out a soft whine.} {playsound  {Cosmic Rage/general/baby/babywhine.wav} @vol}
+#trigger {* wimpers.} {playsound {Cosmic Rage/general/baby/babywhimper*2.wav} @vol}
+#trigger {*screams angrily and tries to struggle out of *} {playsound {Cosmic Rage/general/baby/babyscream*4.wav} @vol}
+#trigger {*lets out a loud sob and reaches out for *} {playsound {Cosmic Rage/general/baby/Babysob*2.wav} @vol}
+#trigger {*screams furiously.} {playsound {Cosmic Rage/general/baby/babyscream*4.wav} @vol}
+#trigger {* tries to take a chunk out of a nearby object.} {playsound {Cosmic Rage/general/misc/curesearch.wav} @vol}
+#trigger {* suddenly bursts into floods of tears because *} {playsound {Cosmic Rage/general/baby/sob.wav} @vol}
+#trigger {* begins to cry.} {playsound {Cosmic Rage/general/baby/sob.wav} @vol}
+#trigger {* seems highly pleased by *} {playsound {Cosmic Rage/general/baby/babyhappy.wav} @vol}
+#trigger {* sobs hard.} {playsound {Cosmic Rage/general/baby/Babysob*2.wav} @vol}
+#trigger {* sobs histerically!} {playsound {Cosmic Rage/general/baby/Babysob*2.wav} @vol}
+#trigger {* waves and laughs!} {playsound {Cosmic Rage/general/baby/babylaugh.wav} @vol}
+#trigger {* squeals with delight.} {playsound {Cosmic Rage/general/baby/babyhappy.wav} @vol}

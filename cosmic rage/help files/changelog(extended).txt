@@ -1,0 +1,62 @@
+this is just for me and you all who are using this, to keep a record. so we dont mess up.
+1. Vade: added keys for cars. ault shit o for accelerate, ault shit m for deaccelerate, ault shift j for handbreak, ault b for buckle and unbuckle, copy keys.set.
+2. Vade: added  sounds for shush social, fixed the kick2 social on both the ends, feel free to kick the fuck out of each other's stomach: copy socials.set and shush1, shush2.wav
+3. Vade: fixed the drinking, now bowl feeding to pets also makes a sound, hopefully added the trigger for fountain drinking, fixed the security drone and camera sounds, I had to get rid of the logging of that buffer though, it was poorly scripted which was fucking around with the string in such a way that the location was not being shown, and I clearly dont have enough knowledge to fix that particular part, the way I did it is not a good practice either, now someone can trigger that sound with the conversation. but that's the only way it worked so. : copy misk.set
+4. Vade: fixed baby bounce, added a sound trigger for roar social for baby, added a new sound for speak social, again, for baby. last one, added the same sound for embrace social as well. : copy babies.set  and babycoo.wav
+5. Vade: now the doorknock sound triggers even if you're the one on the knocking end. copy doors.set
+6. vade:  sorry, now the speak social sound triggers even if someone else is speaking to luna, uh, baby. copy babies.set
+7. vade: reflected the stormies change into babies.set, the way he did it was smarter than us. copy babies.set
+8, Tatsu: added music for Humble Abode. copy music.set and and HumbleAbode.wav
+9. vade: reflected stormies look for ault k change in our keys.set. copy keys.set
+10. vade: added a sound for aborting out of multi liner input box. copy abort2.wav and misk.set
+11. vade: added 2 new keys, control O for getting out of the  auction, and control M for cancel mapper. copy keys.set
+12. Tatsu: Added a new cool set of keystrokes for clacick cars, to toggle and untoggle it type carmode. use the regular keys for directions,, alt left brace and alt right brace for accelerate,  decelerate,  Alt tick for handbrake. alt g, and alt shift g for start and shutdown. and control m to cancel mapper. additionally, you could use the old keys mentioned in the entry 1 if you dont like this one. copy Vehicle cars.set and Vehicle Carkeys.set
+13. vade: fixed the park ambience not playing. copy main ambience.set
+14. vade: sorry I'm dum, now the shush social sound will even play if you see the second person shushing the third person. copy socials.set
+15. vade: now the channel tuning sound play no matter which communicator you're on. copy coms.set
+16. vade: added tail swish sound for dragons. copy dragons.set and sounds\misc\swish.wav
+17. vade: added a whole new file with chances  of more stuff being added in the near  future. yes, toys. added sounds and triggers for squeaky toys and rattles. copy cosmic rage.set, misc/toys.set, and sounds/general/toys folder
+18. vade: fixed a little bug with plushy toys. copy toys.set
+19. vade: I totally forgot about this one, reflectedd the sub announcements change in the coms. copy coms.set
+20. vade: fixed all the gender issues with toys. copy toys.set
+21. vade: added 2 new sounds for ball toys and a trigger for one of the toys. copy toys.set, ball 1, 2.wav
+22. Aloysius: fixed the music for humble abode. enjoy. copy music.set
+23. Aloysius: fixed the kiss social sounds both in out of character and in character. enjoy kissing! coppy socials.set
+24. vade: found a reason for   some sounds were throwing errors instead of playing. now more stuff is on the way, yay. for now? copy toys/ball1 and ball2.wav
+25. Aloysius: made some slite adjustments to socials.set, added a trigger for baby tickle and of course there is a sound for that.  coppy babies.set and socials.set 
+26. vade:  fixed back the tickle social from the third person's prospective. stop breaking things! copy socials.set
+27. vade: added a sound for toy car. copy toycar.wav and toys.set
+28. vade: truely fixed the tickle this time. first person, second person, third person, 4th dimention, not my fault. ok? ok. good. copy socials.set
+29. vade: reflected the new door change in the file we tweeked around with earlier. also, congratulations to us, they included our toys in the  oficial pack. you just need to copy their changelog since we already have all that. copy doors.set
+30. vade: added a few more triggers for babies. copy babies.set
+31. vade: added sounds for spraying perfumes, and hopefully other stuff. copy house/spray 1, 2.wav and house.set
+32. vade: reflected the new mail changes in the coms.set, copy their coms folder and our file. copy coms.set
+33. vade: fixed the door locking and unlocking. copy doors.set
+34. vade: gagged you swishing your tail text. dont spam people to death just because you like the sound. copy dragons.set
+35. vade: added more baby stuff. warning: dont do anything which makes them sad. note: dont copy the baby folder itself. go into the folder. select all. copy, and paste those files into your pack's baby folder. copy all from sounds/general/baby folder and babies.set
+36. vade: 2  new trigger in babies, dont, take them away from their favorite toys, ya know. copy babies.set
+37. vade: added a new sound for the birds. copy misc/flutter.wav and misc.set
+38. vade: another baby trigger. sorry. copy babies.set
+39. vade: added taping sounds. copy everything from sounds/general/house folder and house.set
+40. Tatsu: add a new folder for the developers to keep track of the files you edit. cosmic rage/help files/list of files modified.txt
+41. vade: we got rid of the clasic car keys since they were not in use, and quite annoying mapping to be honest. I modified the list of files modified file accordingly.  remove carkeys.set
+42. vade: as you must have seen, stormy pushed an update with some tape sounds, and those are better so I got rid of ours. the code is same however so dont replace his house.set file. remove tape_pull 1, 2, and tape_roll 1, 2.wav
+43. vade: added a bit of more triggers for babies. copy babies.set
+44. vade: yet a bit more triggers. for babies. copy babies.set
+45. vade: updated the misc file in order to make it compatible with the  oficial pack. copy misc.set
+46. vade: fixed quite a bit of triggers in the clothing items. copy misc/wear.set
+47. vade: added the sounds for trash can churping and loading jar on rod. copy misc/trash can 1, 2.wav, activities/fishing/fishworm.wav and misc.set
+48. vade: compatibility update for socials. copy socials.set
+49. vade: compatibility update: copy misc.set. note: if you want to continue using this pack, the soundpack updater is not recommended
+50. vade: compatibility update and a fix, copy everything from misc folder.
+51. vade: for all you romantic people out there may want to thank me, fixed the kissing and added a bit more triggers for other kissing socials. so, copy socials.set
+52. vade: getting rid of the cosmic rage.set since there's no need for it in our extended pack anymore and it just creates confusion. replace cosmic rage.set with stormies one. remove cosmic rage.set
+53. vade: now air fresheners have a sound too. copy house.set
+54. vade: for those who still care about this thing, a compatibility update. yeah, nothing new. sorry. copy coms.set, main-ambience.set and misc.set
+55. vade: thanks to stormy we don't need to manage one more file since he fixed the issue we fixed earlier so replace main-ambience.set with the latest version of stormies one. replace main-ambience.set
+56. vade: yet another compatibility update. copy coms.set
+57. vade: main-ambience.set is back into the game.  added a new ambience  trigger word and that is, "house", given the nature of the sound, you might not like in certain cases so use it wisely. copy main-ambience.set
+58. vade: compatibility update. copy misc.set
+59. vade:  compatibility update for keys. copy keys.set
+60. vade: compatibility update. copy coms.set and house.set
+
