@@ -1,7 +1,7 @@
 some general notes.
 this is not going to be a fully fledged independent soundpack, we're basically adding more functionalities to the oficial  soundpack.
 here's how it's going to work.
-the directory structure will be the same, with no files, we dont want to fork the soundpack files until we've made any changes to them. we'll add the files only which will be changed. so we could save ourselves some data.
+the directory structure will be the same, with no files, we dont want to fork the soundpack files until we've made any changes to them. we'll add the files only which will be changed. so we could save us  some data.
 there will be 2 additional files though. general notes(extended).txt and changelog(extended).txt in the help folder.
 changelog(extended).txt will keep track of the new functionalities / bug fixes
 we're going to make, with the files you need to copy. this part won't be explained, we expect you to use this particular pack only if you're avair of what you are doing. at your own risk.

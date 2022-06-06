@@ -59,4 +59,6 @@ this is just for me and you all who are using this, to keep a record. so we dont
 58. vade: compatibility update. copy misc.set
 59. vade:  compatibility update for keys. copy keys.set
 60. vade: compatibility update. copy coms.set and house.set
-
+61. vade: compatibility update. copy coms.set and misc.set
+62. vade: got rid of the vehicles folder. it was not being used and was just creating confusion.
+63. vade: got rid of the sounds/toys folder and misc/toys.set since they're being distributed in the official pack.
